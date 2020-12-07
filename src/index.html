@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400&family=Lato:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Studently Webapp</title>
+  </head>
+  <body>
+    <!-- Alert -->
+    <!-- <div class="alert alert-type--error">Incorrect email or password <a href="#" class="cross">&Cross;</a></div> -->
+
+    <!-- WINDOW -->
+    <!-- <div class="window__content">
+      <div class="window__ok">
+        Yes, please delete it
+      </div>
+
+      <div class="window__cancel">
+        No, I want to cancel
+      </div>
+    </div> -->
+
+    <div class="container">
+      <header class="header">
+        <!-- <img src="img/logo.webp" alt="Studently logo" class="logo" /> -->
+        &nbsp;
+
+        <div class="header__login">
+          <a href="#" class="btn btn--login">Login</a>
+          <a href="#" type="submit" class="btn btn--ghost btn--signup">Sign up</a>
+        </div>
+
+        <!-- <nav class="user-nav">
+          <div class="header__login">
+            <a href="#" class="btn btn--logout">Logout</a>
+          </div>
+
+          <div class="user-nav__user">
+            <img
+              src="img/default.png"
+              alt="User Photo"
+              class="user-nav__user-photo"
+            />
+            <span class="user-nav__user-name">Idris</span>
+          </div>
+        </nav> -->
+
+        <!-- <div class="user-nav__dropdown">
+            <a href="#" class="user-nav__link">Settings</a>
+            <a href="#" class="user-nav__link">Statistics</a>
+            <a href="#" class="user-nav__link">Settings</a>
+          </div> -->
+        <!-- </nav> -->
+      </header>
+
+      <div class="content">
+        <nav class="sidebar">
+          <ul class="side-nav">
+            <li
+              class="side-nav__item side-nav__item side-nav-card"
+            >
+              <a href="#" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use href="img/SVG/documents.svg"></use>
+                </svg>
+                <span>My Cards</span>
+              </a>
+            </li>
+
+            <li class="side-nav__item side-nav__item side-nav-deck">
+              <a href="#" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use href="img/SVG/drive.svg"></use>
+                </svg>
+                <span>My Decks</span>
+              </a>
+            </li>
+
+            <li class="side-nav__item side-nav__item side-nav-classroom">
+              <a href="#" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use href="img/SVG/graduation-cap.svg"></use>
+                </svg>
+                <span>My Classrooms</span>
+              </a>
+            </li>
+
+            <!-- <li class="side-nav__item side-nav__item">
+              <a href="#" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use href="img/SVG/line-graph.svg"></use>
+                </svg>
+                <span>My Statistics</span>
+              </a>
+            </li> -->
+
+            <li class="side-nav__item side-nav__item side-nav-settings">
+              <a href="#" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use href="img/SVG/cog.svg"></use>
+                </svg>
+                <span>My Settings</span>
+              </a>
+            </li>
+          </ul>
+
+          <div class="legal">
+            &copy; 2020 by Studently. All rights reserved.
+          </div>
+        </nav>
+
+        <div class="overview">
+          <!-- LOGIN -->
+          <!-- <div class="login">
+            <form action="#" class="form">
+              <div class="form__group">
+                <input type="email" class="form__input" id="email" placeholder="Email Address" required>
+                <label for="email" class="form__label">Email Address</label>
+              </div>
+              
+              <div class="form__group">
+                <input type="password" class="form__input" id="password" placeholder="Password" required>
+                <label for="password" class="form__label">Password</label>
+              </div>
+
+              <div class="form__group">
+                <span class="form__span"><a href="#" class="form__link">Forgot your password?</a></span>
+              </div>
+              
+              <div class="form__group">
+                <button class="btn--btn-login">Login</button>
+              </div>
+            </form>
+          </div> -->
+
+          <!-- SIGNUP -->
+          <!-- <div class="login signup">
+            <form action="#" class="form">
+              <div class="form__group">
+                <input type="name" class="form__input" id="name" placeholder="Name" required>
+                <label for="nYame" class="form__label">Name</label>
+              </div>
+
+              <div class="form__group">
+                <input type="email" class="form__input" id="email" placeholder="Email Address" required>
+                <label for="email" class="form__label">Email Address</label>
+              </div>
+              
+              <div class="form__group">
+                <input type="password" class="form__input" id="password" placeholder="Password" required>
+                <label for="password" class="form__label">Password</label>
+              </div>
+
+              <div class="form__group">
+                <input type="password" class="form__input" id="password" placeholder="Confirm Password" required>
+                <label for="password" class="form__label">Confirm Password</label>
+              </div>
+
+              <div class="form__group">
+                <span class="form__span"><a href="#" class="form__link">Forgot your password?</a></span>
+              </div>
+
+              <div class="form__group">
+                <div class="form__radio-group">
+                    
+                    <input type="radio" id="student" class="form__radio-input" name="tour-group" value="student" required>
+
+                    <label for="student" class="form__radio-label">
+                        <span class="form__radio-button"></span>
+                        Student
+                    </label>
+               
+                    <input type="radio" id="teacher" class="form__radio-input" name="tour-group" value="teacher" required>
+
+                    <label for="teacher" class="form__radio-label">
+                        <span class="form__radio-button"></span>
+                        Teacher
+                    </label>
+                </div>
+            </div>
+              
+              <div class="form__group">
+                <button class="btn--btn-signup">Signup</button>
+              </div>
+            </form>
+          </div> -->
+
+          <!-- UPDATE SETTING -->
+           <!-- <div class="update-settings">
+            <form action="#" class="update-settings__form">
+              <h2 class="form__heading form__heading--1">Your Details</h2>
+
+              <div class="form__group form__group--1">
+                <input type="name" class="form__input" id="name" placeholder="your name">
+                <label for="name" class="form__label">Your name</label>
+              </div>
+
+              <div class="form__group form__group--2">
+                <input type="email" class="form__input" id="email" placeholder="Email Address">
+                <label for="email" class="form__label">Email Address</label>
+              </div>
+
+              <div class="form__group form__group--3">
+                <img src="https://polar-savannah-53668.herokuapp.com/img/users/${user.photo}" alt="user photo" class="form__img--photo" />
+              </div>
+
+              <div class="form__group form__group--4">
+                <label for="photo" class="form__label--photo">Select a photo</label>
+                <input type="file" class="form__input--photo" id="photo" accept="image/*" >
+              </div>
+
+              <div class="form__group form__group--5">
+                <button class="btn--btn-save-settings">Save Settings</button>
+              </div>
+              
+              <div class="form__group form__group--6">
+                <input type="password" class="form__input" id="password" placeholder="Old Password" required>
+                <label for="password" class="form__label">Old Password</label>
+              </div>
+
+              <div class="form__group form__group--7">
+                <input type="password" class="form__input" id="password" placeholder="New Password" required>
+                <label for="password" class="form__label">New Password</label>
+              </div>
+
+              <div class="form__group form__group--8">
+                <input type="password" class="form__input" id="password" placeholder="Confirm Password" required>
+                <label for="password" class="form__label">Confirm Password</label>
+              </div>
+              
+              <div class="form__group form__group--9">
+                <button class="btn--btn-save-password">Change Password</button>
+              </div>
+            </form>
+          </div> -->
+
+          <!-- CARDS -->
+          <!-- <div class="make-card">
+            <a href="#" class="btn btn--ghost">Make A New Card</a>
+          </div>
+
+          <div class="card-grid">
+            <div class="no-item">
+                <svg class="icon icon--no-card">
+                  <use href="img/SVG/documents.svg"></use>
+                </svg>
+                <span>make some cards to see them here!</span>
+            </div>
+
+            <div class="card">
+              <div class="card__options">
+                <a href="#" class="options options--edit">
+                  <svg class="icon icon--options icon--edit">
+                    <use xlink:href="img/SVG/edit.svg"></use>
+                  </svg>
+                  <span class="show-hide card--edit">Edit</span>
+                </a>
+
+                <a href="#" class="options options--delete">
+                  <svg class="icon icon--options icon--delete">
+                    <use xlink:href="img/SVG/trash.svg"></use>
+                  </svg>
+                  <span class="show-hide card--delete">Delete</span>
+                </a>
+              </div>
+
+              <div class="card__details">
+                <span class="name">
+                  This is what a Question should look like
+                </span>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card__details">
+                <span class="name"
+                  >Is light a particle or a wave? (Hint: think of light
+                  reflecting and diffracting</span
+                >
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card__details">
+                <span class="name"
+                  >This is what an Answer should look like</span
+                >
+              </div>
+
+              <div class="answer-form">
+                <a href="#" class="answer-form_link">
+                  <svg class="icon icon--card icon--card-right icon--right">
+                    <use href="img/sprite.svg#icon-check"></use>
+                  </svg>
+                </a>
+
+                <a href="#" class="answer-form_link">
+                  <svg class="icon icon--card icon--card-left icon--wrong">
+                    <use href="img/sprite.svg#icon-circle-with-cross"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card__details">
+                <span class="name">What is a Question?</span>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card__details">
+                <span class="name"
+                  >This is what an Answer should look like</span
+                >
+              </div>
+
+              <div class="answer-form">
+                <a href="#" class="answer-form_link">
+                  <svg class="icon icon--card icon--card-right icon--right">
+                    <use href="img/sprite.svg#icon-check"></use>
+                  </svg>
+                </a>
+
+                <a href="#" class="answer-form_link">
+                  <svg class="icon icon--card icon--card-left icon--wrong">
+                    <use href="img/sprite.svg#icon-circle-with-cross"></use>
+                  </svg>
+                </a>
+              </div>
+            </div> -->
+
+          <!-- MAKE CARD -->
+          <!-- <div class="make-card-grid">
+              <div class="card card--make">
+                <div class="card__details">
+                  <span class="name">What is a Question?</span>
+                </div>
+              </div>
+
+              <form action="#" class="make-card__form">
+                  <label for="question" class="make-card__label">Enter Your Question</label>
+                  <textarea id="question" class="make-card__textarea  textarea-q" wrap="off" minlength="5" maxlength="250" placeholder="Enter your question" required="true" spellcheck="true"></textarea>
+                
+                  <label for="answer" class="make-card__label">Enter Your Answer</label>
+                  <textarea id="answer" class="make-card__textarea textarea-a" wrap="off" minlength="5" maxlength="250" placeholder="Enter your answer" required="true" spellcheck="true"></textarea>
+              </form>
+
+              <div class="make-card__group make-card--switch">
+                <a href="#" class="make-card__switch btn btn--switch">Turn Over</a>
+              </div>
+
+              <div class="make-card__group make-card--right">
+                <a href="#" class="make-card__link">
+                  <svg class="icon icon--make-card icon--make-card-right icon--right">
+                    <use href="img/SVG/check.svg"></use>
+                  </svg>
+                </a>
+                <span class="make-card__span">Create The Card</span>
+              </div>
+
+              <div class="make-card__group make-card--wrong">
+                <a href="#" class="make-card__link">
+                  <svg class="icon icon--make-card icon--make-card-left icon-left icon--wrong">
+                    <use href="img/SVG/circle-with-cross.svg"></use>
+                  </svg>
+                </a>
+                <span class="make-card__span">Let's Stop!</span>
+              </div>
+            </div> -->
+
+          <!-- UPDATE CARDS -->
+          <!-- <div class="make-card-grid">
+              <div class="card card--make">
+                <div class="card__details">
+                  <span class="name">What is a Question?</span>
+                </div>
+              </div>
+
+              <form action="#" class="make-card__form">
+                  <label for="question" class="make-card__label">Enter Your Question</label>
+                  <textarea id="question" class="make-card__textarea  textarea-q" wrap="off" minlength="5" maxlength="250" placeholder="Enter your question" required="true" spellcheck="true"></textarea>
+                
+                  <label for="answer" class="make-card__label">Enter Your Answer</label>
+                  <textarea id="answer" class="make-card__textarea textarea-a" wrap="off" minlength="5" maxlength="250" placeholder="Enter your answer" required="true" spellcheck="true"></textarea>
+              </form>
+
+              <div class="make-card__group make-card--switch">
+                <a href="#" class="make-card__switch btn btn--switch">Turn Over</a>
+              </div>
+
+              <div class="make-card__group make-card--right">
+                <a href="#" class="make-card__link">
+                  <svg class="icon icon--make-card icon--make-card-right icon--right">
+                    <use href="img/SVG/check.svg"></use>
+                  </svg>
+                </a>
+                <span class="make-card__span">Update The Card</span>
+              </div>
+
+              <div class="make-card__group make-card--wrong">
+                <a href="#" class="make-card__link">
+                  <svg class="icon icon--make-card icon--make-card-left icon-left icon--wrong">
+                    <use href="img/SVG/circle-with-cross.svg"></use>
+                  </svg>
+                </a>
+                <span class="make-card__span">Let's Stop!</span>
+              </div>
+            </div> -->
+
+          <!-- MY DECKS-->
+
+          <!-- <div class="make-deck">
+              <a href="#" class="btn btn--ghost">Make A New Deck</a>
+            </div>
+            <div class="deck-grid">
+              <div class="deck">
+                <div class="card__options">
+                  <a href="#" class="options options--edit">
+                    <svg class="icon icon--options icon--edit">
+                      <use xlink:href="img/SVG/edit.svg"></use>
+                    </svg>
+                    <span class="show-hide card--edit">Edit</span>
+                  </a>
+  
+                  <a href="#" class="options options--delete">
+                    <svg class="icon icon--options icon--delete">
+                      <use xlink:href="img/SVG/trash.svg"></use>
+                    </svg>
+                    <span class="show-hide card--delete">Delete</span>
+                  </a>
+                </div>
+
+                <div class="deck__details">
+                  <span class="name">Deck 1</span>
+                </div>
+              </div>
+              <div class="deck">
+                <div class="deck__details">
+                  <span class="name">Deck 2</span>
+                </div>
+              </div>
+              <div class="deck">
+                <div class="deck__details">
+                  <span class="name">Deck 3</span>
+                </div>
+              </div>
+            </div> -->
+
+          <!-- MAKE DECKS -->
+          <!--<div class="make-deck-grid">
+
+              <form action="#" class="make-deck__form">
+                  <label for="deck-name" class="make-deck__label">Enter Deck name</label>
+                  <input class="make-deck__input" type="text" minlength="5" maxlength="50" id="deck-name" placeholder="Deck Name">
+              </form>
+
+              <div class="make-deck__card-nav make-deck__card-nav--user-cards">
+                <span class="make-deck__name">My Cards</span>
+                <ul class="make-deck__list">
+                  <li class="make-deck__item">
+                    <a href="#" class="make-deck__link">
+                      <svg class="icon icon__make-deck--card">
+                        <use href="img/SVG/plus.svg"></use>
+                      </svg>
+                      <div class="make-deck__card-details">
+                        <span class="make-deck__span make-deck-span--question">ipsum lorem ipsum dolor sit amet ipsum lorem ipsum dolor sit amet ipsum lorem ipsum dolor sit amet ipsum lorem ipsum dolor sit amet</span>
+                      <span class="make-deck__span make-deck-span--answer">Card Answer</span>
+                      </div>
+                    </a>
+                  </li>
+
+                  <li class="make-deck__item">
+                    <a href="#" class="make-deck__link">
+                      <svg class="icon icon__make-deck--card">
+                        <use href="img/SVG/plus.svg"></use>
+                      </svg>
+                      <div class="make-deck__card-details">
+                        <span class="make-deck__span make-deck-span--question">Card Question</span>
+                      <span class="make-deck__span make-deck-span--answer">Card Answer</span>
+                      </div>
+                    </a>
+                  </li>
+
+                  <li class="make-deck__item">
+                    <a href="#" class="make-deck__link">
+                      <svg class="icon icon__make-deck--card">
+                        <use href="img/SVG/plus.svg"></use>
+                      </svg>
+                      <div class="make-deck__card-details">
+                        <span class="make-deck__span make-deck-span--question">Card Question</span>
+                      <span class="make-deck__span make-deck-span--answer">Card Answer</span>
+                      </div>
+                    </a>
+                  </li>
+
+                  <li class="make-deck__item">
+                    <a href="#" class="make-deck__link">
+                      <svg class="icon icon__make-deck--card">
+                        <use href="img/SVG/plus.svg"></use>
+                      </svg>
+                      <div class="make-deck__card-details">
+                        <span class="make-deck__span make-deck-span--question">Card Question</span>
+                      <span class="make-deck__span make-deck-span--answer">Card Answer</span>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+
+                <div class="make-deck__paginate">
+                  <button class="btn--inline btn__search btn__search--next" data-goto="1">
+                    <span>Page 1</span>
+                    <svg class="icon icon__search icon__search--next">
+                      <use href="img/SVG/chevron-thin-left.svg"></use>
+                    </svg>
+                  </button>
+
+                  <button class="btn--inline btn__search btn__search--prev" data-goto="4">
+                    <span>Page 4</span>
+                    <svg class="icon icon__search icon__search--prev">
+                      <use href="img/SVG/chevron-thin-right.svg"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+              <div class="make-deck__card-nav make-deck__card-nav--deck-cards">
+                <span class="make-deck__name">Deck Cards</span>
+                <ul class="make-deck__list">
+                  <li class="make-deck__item">
+
+                    <a href="#" class="make-deck__link">
+                      <svg class="icon icon__make-deck--card">
+                        <use href="img/SVG/minus.svg"></use>
+                      </svg>
+                      <div class="make-deck__card-details">
+                        <span class="make-deck__span make-deck-span--question">What is the speed of light?</span>
+                      <span class="make-deck__span make-deck-span--answer">300,000 m/s-1</span>
+                      </div>
+                    </a>
+                  </li>
+
+                  <li class="make-deck__item">
+                    <a href="#" class="make-deck__link">
+                      <svg class="icon icon__make-deck--card">
+                        <use href="img/SVG/minus.svg"></use>
+                      </svg>
+                      <div class="make-deck__card-details">
+                        <span class="make-deck__span make-deck-span--question">Card Question</span>
+                      <span class="make-deck__span make-deck-span--answer">Card Answer</span>
+                      </div>
+                    </a>
+                  </li>
+
+                  <li class="make-deck__item">
+                    <a href="#" class="make-deck__link">
+                      <svg class="icon icon__make-deck--card">
+                        <use href="img/SVG/minus.svg"></use>
+                      </svg>
+                      <div class="make-deck__card-details">
+                        <span class="make-deck__span make-deck-span--question">Card Question</span>
+                      <span class="make-deck__span make-deck-span--answer">Card Answer</span>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="make-deck__card-switch">
+                <div class="card card--make make-deck__card">
+                <div class="card__options">
+                  <a href="#" class="options options--add">
+                    <svg class="icon icon--options icon--add">
+                      <use xlink:href="img/SVG/plus.svg"></use>
+                    </svg>
+                    <span class="show-hide card--edit">Add card</span>
+                  </a>
+  
+                </div>
+
+                <div class="card__details">
+                  <span class="name">What is a Question?</span>
+                </div>
+                </div>
+
+                <div class="make-deck__group make-deck--switch">
+                  <a href="#" class="make-deck__switch btn btn--switch">Turn Over</a>
+                </div>
+              </div>
+              
+              <div class="make-deck__options">
+                <div class="make-deck__group make-deck--right">
+                  <a href="#" class="make-deck__link">
+                    <svg class="icon icon--make-deck icon--make-card-right icon--right">
+                      <use href="img/SVG/check.svg"></use>
+                    </svg>
+                  </a>
+                  <span class="make-deck__span">Create The Deck</span>
+                </div>
+
+                <div class="make-deck__group make-deck--wrong">
+                  <a href="#" class="make-deck__link">
+                    <svg class="icon icon--make-deck icon--make-deck-left icon-left icon--wrong">
+                      <use href="img/SVG/circle-with-cross.svg"></use>
+                    </svg>
+                  </a>
+                  <span class="make-deck__span">Let's Stop!</span>
+                </div>
+              </div>
+              
+
+            </div> -->
+
+          <!--CLASSROOM-->
+          <!-- <div class="make-classroom">
+              <a href="#" class="btn btn--ghost">Make A New Classroom</a>
+            </div>
+            <div class="classroom-grid">
+              <div class="classroom">
+                <div class="classroom__details">
+                  <span class="name">Classroom 1</span>
+                </div>
+              </div>
+              <div class="classroom">
+                <div class="classroom__details">
+                  <span class="name">Classroom 2</span>
+                </div>
+              </div>
+              <div class="classroom">
+                <div class="classroom__details">
+                  <span class="name">Classroom 3</span>
+                </div>
+              </div>
+            </div> -->
+
+          <!-- VIEW CLASSROOM -->
+          <!-- <div class="view-classroom-grid make-classroom-grid">
+            <div
+              class="view-classroom__student-nav view-classroom__student-nav--users-student"
+            >
+              <span class="view-classroom__name">Classmates</span>
+              <ul class="view-classroom__list">
+                <li class="view-classroom__item">
+                  <a href="#" class="view-classroom__link">
+                    <svg class="icon icon__view-classroom--user">
+                      <use href="img/SVG/user.svg"></use>
+                    </svg>
+                    <div class="view-classroom__card-details">
+                      <span
+                        class="view-classroom__span view-classroom-span--question"
+                        >Student 1</span
+                      >
+                      <span
+                        class="view-classroom__span make-classroom-span--answer"
+                        >Jennete Margarita</span
+                      >
+                    </div>
+                  </a>
+                </li>
+
+                <li class="make-deck__item">
+                  <a href="#" class="make-deck__link">
+                    <svg class="icon icon__make-deck--card">
+                      <use href="img/SVG/user.svg"></use>
+                    </svg>
+                    <div class="make-deck__card-details">
+                      <span class="make-deck__span make-deck-span--question"
+                        >Student 2</span
+                      >
+                      <span class="make-deck__span make-deck-span--answer"
+                        >Athanasia de Alger Obelia</span
+                      >
+                    </div>
+                  </a>
+                </li>
+
+                <li class="make-deck__item">
+                  <a href="#" class="make-deck__link">
+                    <svg class="icon icon__make-deck--card">
+                      <use href="img/SVG/user.svg"></use>
+                    </svg>
+                    <div class="make-deck__card-details">
+                      <span class="make-deck__span make-deck-span--question"
+                        >Student 3</span
+                      >
+                      <span class="make-deck__span make-deck-span--answer"
+                        >Ijekiel Alpheus</span
+                      >
+                    </div>
+                  </a>
+                </li>
+              </ul>
+
+              <div class="view-classroom__paginate">
+                <button
+                  class="btn--inline btn__search btn__search--next"
+                  data-goto="1"
+                >
+                  <span>Page 1</span>
+                  <svg class="icon icon__search icon__search--next">
+                    <use href="img/SVG/chevron-thin-left.svg"></use>
+                  </svg>
+                </button>
+
+                <button
+                  class="btn--inline btn__search btn__search--prev"
+                  data-goto="4"
+                >
+                  <span>Page 4</span>
+                  <svg class="icon icon__search icon__search--prev">
+                    <use href="img/SVG/chevron-thin-right.svg"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <div
+              class="view-classroom__deck-nav view-classroom__deck-nav--deck"
+            >
+              <span class="view-classroom__name">Deck</span>
+              <ul class="view-classroom__list">
+                <li class="view-classroom__item view-classroom__item--deck">
+                  <a href="#" class="view-classroom__link">
+                    <svg class="icon icon__view-classroom--card">
+                      <use href="img/SVG/drive.svg"></use>
+                    </svg>
+                    <div class="view-classroom__card-details">
+                      <span
+                        class="view-classroom__span view-classroom-span--question"
+                        >Teacher's Deck 1</span
+                      >
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div
+              class="view-classroom__teacher-nav view-classroom__teacher-nav--users-teacher"
+            >
+              <span class="view-classroom__name">Teacher</span>
+              <ul class="view-classroom__list">
+                <li class="view-classroom__item view-classroom__item--techer">
+                  <a href="#" class="view-classroom__link">
+                    <svg class="icon icon__view-classroom--card">
+                      <use href="img/SVG/user.svg"></use>
+                    </svg>
+                    <div class="view-classroom__card-details">
+                      <span
+                        class="view-classroom__span view-classroom-span--question"
+                        >Teacher</span
+                      >
+                      <span class="make-deck__span make-deck-span--answer"
+                        >Solomon Arhad Wolfstein</span
+                      >
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+          </div> -->
+
+            <!-- MAKE CLASSROOM -->
+            <!-- <div class="make-classroom-grid">
+
+              <form action="#" class="make-classroom__form">
+                  <label for="classroom-name" class="make-classroom__label">Enter Classroom name</label>
+                  <input class="make-deck__input" type="text" minlength="5" maxlength="50" id="classroom-name" placeholder="Classroom Name">
+              </form>
+
+              <div class="make-classroom__student-nav make-classroom__student-nav--users-student">
+
+              <span class="make-classroom__name">All Students</span>
+              <ul class="make-classroom__list make-classroom__list--students">
+                <li class="make-classroom__item">
+                  <a href="#" class="make-classroom__link">
+                    <svg class="icon icon__make-classroom--user">
+                      <use href="img/SVG/plus.svg"></use>
+                    </svg>
+                    <div class="make-classroom__card-details">
+                      <span
+                        class="make-classroom__span make-classroom-span--question"
+                        >Student 1</span
+                      >
+                      <span
+                        class="make-classroom__span make-classroom-span--answer"
+                        >Jennete Margarita</span
+                      >
+                    </div>
+                  </a>
+                </li>
+
+                <li class="make-deck__item">
+                  <a href="#" class="make-deck__link">
+                    <svg class="icon icon__make-deck--card">
+                      <use href="img/SVG/plus.svg"></use>
+                    </svg>
+                    <div class="make-deck__card-details">
+                      <span class="make-deck__span make-deck-span--question"
+                        >Student 2</span
+                      >
+                      <span class="make-deck__span make-deck-span--answer"
+                        >Athanasia de Alger Obelia</span
+                      >
+                    </div>
+                  </a>
+                </li>
+
+                <li class="make-deck__item">
+                  <a href="#" class="make-deck__link">
+                    <svg class="icon icon__make-deck--card">
+                      <use href="img/SVG/plus.svg"></use>
+                    </svg>
+                    <div class="make-deck__card-details">
+                      <span class="make-deck__span make-deck-span--question"
+                        >Student 3</span
+                      >
+                      <span class="make-deck__span make-deck-span--answer"
+                        >Ijekiel Alpheus</span
+                      >
+                    </div>
+                  </a>
+                </li>
+              </ul>
+
+              <div class="make-classroom__paginate make-classroom__paginate--students">
+                <button
+                  class="btn--inline btn__search btn__search--next"
+                  data-goto="1"
+                >
+                  <span>Page 1</span>
+                  <svg class="icon icon__search icon__search--next">
+                    <use href="img/SVG/chevron-thin-left.svg"></use>
+                  </svg>
+                </button>
+
+                <button
+                  class="btn--inline btn__search btn__search--prev"
+                  data-goto="4"
+                >
+                  <span>Page 4</span>
+                  <svg class="icon icon__search icon__search--prev">
+                    <use href="img/SVG/chevron-thin-right.svg"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <div class="make-classroom__deck-nav make-classroom__deck-nav--deck">
+              <span class="make-classroom__name">My Decks</span>
+              <ul class="make-classroom__list make-classroom__list--decks">
+                <li class="make-classroom__item make-classroom__item--deck">
+                  <a href="#" class="make-classroom__link">
+                    <svg class="icon icon__make-classroom--card">
+                      <use href="img/SVG/plus.svg"></use>
+                    </svg>
+                    <div class="make-classroom__card-details">
+                      <span
+                        class="make-classroom__span make-classroom-span--question"
+                        >Teacher's Deck 1</span
+                      >
+                    </div>
+                  </a>
+                </li>
+
+                <li class="make-classroom__item make-classroom__item--deck">
+                  <a href="#" class="make-classroom__link">
+                    <svg class="icon icon__make-classroom--card">
+                      <use href="img/SVG/plus.svg"></use>
+                    </svg>
+                    <div class="make-classroom__card-details">
+                      <span
+                        class="make-classroom__span make-classroom-span--question"
+                        >Teacher's Deck 2</span
+                      >
+                    </div>
+                  </a>
+                </li>
+
+                <li class="make-classroom__item make-classroom__item--deck">
+                  <a href="#" class="make-classroom__link">
+                    <svg class="icon icon__make-classroom--card">
+                      <use href="img/SVG/plus.svg"></use>
+                    </svg>
+                    <div class="make-classroom__card-details">
+                      <span
+                        class="make-classroom__span make-classroom-span--question"
+                        >Teacher's Deck 3</span
+                      >
+                    </div>
+                  </a>
+                </li>
+              </ul>
+
+              <div class="make-classroom__paginate make-classroom__paginate--decks">
+                <button class="btn--inline btn__search btn__search--next"
+                  data-goto="1" >
+                  <span>Page 1</span>
+                  <svg class="icon icon__search icon__search--next">
+                    <use href="img/SVG/chevron-thin-left.svg"></use>
+                  </svg>
+                </button>
+
+                <button class="btn--inline btn__search btn__search--prev" data-goto="4">
+                  <span>Page 4</span>
+                  <svg class="icon icon__search icon__search--prev">
+                    <use href="img/SVG/chevron-thin-right.svg"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <div class="make-classroom__deck-nav make-classroom__deck-nav--deck-curr">
+              <span class="make-classroom__name">Classroom deck</span>
+              <ul class="make-classroom__list make-classroom__list--classroom-deck">
+                <li class="make-classroom__item make-classroom__item--decks">
+                  <a href="#" class="make-classroom__link">
+                    <svg class="icon icon__make-classroom--card">
+                      <use href="img/SVG/minus.svg"></use>
+                    </svg>
+                    <div class="make-classroom__card-details">
+                      <span
+                        class="make-classroom__span make-classroom-span--question"
+                        >Teacher's Deck 1</span
+                      >
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="make-classroom__student-nav make-classroom__student-nav--users-student-curr">
+
+              <span class="make-classroom__name">Classroom Students</span>
+              <ul class="make-classroom__list make-classroom__list--classroom-students">
+                <li class="make-classroom__item">
+                  <a href="#" class="make-classroom__link">
+                    <svg class="icon icon__make-classroom--user">
+                      <use href="img/SVG/minus.svg"></use>
+                    </svg>
+                    <div class="make-classroom__card-details">
+                      <span
+                        class="make-classroom__span make-classroom-span--question"
+                        >Student 1</span
+                      >
+                      <span
+                        class="make-classroom__span make-classroom-span--answer"
+                        >Jennete Margarita</span
+                      >
+                    </div>
+                  </a>
+                </li>
+
+                <li class="make-deck__item">
+                  <a href="#" class="make-deck__link">
+                    <svg class="icon icon__make-deck--card">
+                      <use href="img/SVG/minus.svg"></use>
+                    </svg>
+                    <div class="make-deck__card-details">
+                      <span class="make-deck__span make-deck-span--question"
+                        >Student 2</span
+                      >
+                      <span class="make-deck__span make-deck-span--answer"
+                        >Athanasia de Alger Obelia</span
+                      >
+                    </div>
+                  </a>
+                </li>
+
+                <li class="make-deck__item">
+                  <a href="#" class="make-deck__link">
+                    <svg class="icon icon__make-deck--card">
+                      <use href="img/SVG/minus.svg"></use>
+                    </svg>
+                    <div class="make-deck__card-details">
+                      <span class="make-deck__span make-deck-span--question"
+                        >Student 3</span
+                      >
+                      <span class="make-deck__span make-deck-span--answer"
+                        >Ijekiel Alpheus</span
+                      >
+                    </div>
+                  </a>
+                </li>
+              </ul>
+
+              <div class="make-classroom__paginate make-classroom__paginate--classroom-students">
+                <button
+                  class="btn--inline btn__search btn__search--next"
+                  data-goto="1"
+                >
+                  <span>Page 1</span>
+                  <svg class="icon icon__search icon__search--next">
+                    <use href="img/SVG/chevron-thin-left.svg"></use>
+                  </svg>
+                </button>
+
+                <button
+                  class="btn--inline btn__search btn__search--prev"
+                  data-goto="4"
+                >
+                  <span>Page 4</span>
+                  <svg class="icon icon__search icon__search--prev">
+                    <use href="img/SVG/chevron-thin-right.svg"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+              
+            <div class="make-classroom__create-box">
+              <div class="make-classroom__group make-classroom--right">
+                <a href="#" class="make-classroom__link">
+                  <svg class="icon icon--make-classroom icon--make-classroom-right icon--right">
+                    <use href="img/SVG/check.svg"></use>
+                  </svg>
+                </a>
+                <span class="make-classroom__span">Create The Classroom</span>
+              </div>
+
+              <div class="make-classroom__group make-classroom--wrong">
+                <a href="#" class="make-classroom__link">
+                  <svg class="icon icon--make-classroom icon--make-classroom-left icon-left icon--wrong">
+                    <use href="img/SVG/circle-with-cross.svg"></use>
+                  </svg>
+                </a>
+                <span class="make-classroom__span">Let's Stop!</span>
+              </div>
+              </div>
+
+            </div> -->
+
+
+
+            
+              
+
+            <!-- END OF OVERVIEW -->
+          </div>
+          <!-- END OF CONTENT -->
+        </div>
+        <!-- END OF CONTAINER -->
+      </div>
+    </div>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

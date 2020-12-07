@@ -1,0 +1,65 @@
+.classroom {
+  background-color: $color-grey-light-2;
+  margin: 2rem 4rem;
+  height: 35rem;
+  border-radius: 3px;
+  box-shadow: 0.5rem 0.8rem 1rem rgba(#000, 0.2);
+  transform: scale(1);
+  transition: all 200ms;
+  width: 70%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  cursor: pointer;
+
+  &__options {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: flex;
+    flex-direction: column;
+
+    & > *:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &__details {
+    font-size: 1.4rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0 2rem;
+    color: $color-grey-dark-3;
+  }
+
+  &__name {
+    display: inline-block;
+    width: 100%;
+    word-break: break-word;
+  }
+
+  &:hover {
+    transform: scale(1.03);
+  }
+}
+
+.make-classroom {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+  backface-visibility: hidden;
+
+  & a:link,
+  & a:visited {
+    // background-color: #2f2519;
+    background-color: $color-grey-dark-1;
+    transform: translateY(0);
+  }
+
+  & a:hover,
+  & a:active {
+    transform: translateY(-0.5rem);
+  }
+}

@@ -1,0 +1,41 @@
+.options {
+  text-decoration: none;
+  font-size: 1rem;
+
+  z-index: 9999;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  // width: 4rem;
+  // height: 4rem;
+  // border-radius: 50%;
+  // background-color: $color-green-right;
+
+  &:hover svg {
+    transform: scale(1.2);
+  }
+
+  &:hover .show-hide {
+    display: block;
+  }
+
+  & .show-hide {
+    display: none;
+    // transition: display 1000ms;
+  }
+
+  &--edit {
+    color: $color-primary-dark;
+  }
+
+  &--delete {
+    color: $color-secondary-dark;
+  }
+
+  &--add {
+    color: $color-green-right;
+  }
+}

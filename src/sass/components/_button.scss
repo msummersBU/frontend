@@ -1,0 +1,129 @@
+.btn {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+
+  &:link,
+  &:visited {
+    color: $color-grey-dark-1;
+    text-decoration: none;
+    border: 1px solid $color-secondary;
+    padding: 1.2rem 3rem;
+    border-radius: 100rem;
+    // transform: translateY(0);
+    transition: all 200ms;
+  }
+
+  &:hover,
+  &:active {
+    background-color: $color-secondary;
+    // transform: translateY(1rem);
+    color: $color-grey-light-1;
+  }
+
+  &--ghost:link,
+  &--ghost:visited {
+    background-color: $color-secondary;
+    color: $color-grey-light-1;
+  }
+
+  &--logout:link,
+  &--logout:visited {
+    padding: 1rem 3rem;
+  }
+
+  &--switch:link,
+  &--switch:visited {
+    // background-color: $color-tertiary-2;
+    background-image: linear-gradient(
+      45deg,
+      $color-tertiary-1,
+      $color-tertiary-2,
+      $color-tertiary-3
+    );
+    color: $color-grey-light-3;
+    width: 90%;
+    transition: all 200ms;
+    box-shadow: 0 0.8rem 1rem rgba(#000, 0.2);
+  }
+
+  &--switch:hover,
+  &--switch:active {
+    // background-color: $color-tertiary-1;
+    background-image: linear-gradient(
+      315deg,
+      $color-tertiary-1,
+      $color-tertiary-2,
+      $color-tertiary-3
+    );
+  }
+
+  &--inline {
+    // width: 5rem;
+    // height: 5rem;
+    display: inline-block;
+    border-radius: 100rem;
+    padding: 1.5rem;
+    cursor: pointer;
+    border: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: column;
+    background-color: transparent;
+  }
+
+  &__search {
+    & span {
+      color: $color-grey-light-2;
+      margin: 0 1rem;
+      transition: all 200ms;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+
+    &:hover svg {
+      transform: scale(1.2);
+    }
+
+    &--next:hover span {
+      color: $color-green-right;
+    }
+
+    &--prev:hover span {
+      color: $color-tertiary-2;
+    }
+  }
+}
+
+.btn--btn-login,
+.btn--btn-signup,
+.btn--btn-save-settings,
+.btn--btn-save-password {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+
+  & {
+    color: $color-grey-dark-1;
+    text-decoration: none;
+    border: 1px solid transparent;
+    padding: 1.2rem 3rem;
+    border-radius: 100rem;
+    // transform: translateY(0);
+    transition: all 200ms;
+    width: 100%;
+    background-color: rgba(#fff, 0.9);
+    cursor: pointer;
+  }
+
+  &:hover {
+    background-color: $color-secondary;
+    // transform: translateY(1rem);
+    color: $color-grey-light-1;
+  }
+}
+
+.btn--btn-save-settings,
+.btn--btn-save-password {
+  width: 50%;
+}

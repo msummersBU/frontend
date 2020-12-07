@@ -1,0 +1,13 @@
+.login {
+  margin: auto auto;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: rgba($color-grey-dark-1, 0.9);
+  width: 65%;
+  border-radius: 3px;
+  padding: 4rem;
+  box-shadow: 1rem 1.5rem 5rem rgba(#000, 0.2);
+  // overflow: hidden;
+}

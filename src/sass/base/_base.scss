@@ -1,0 +1,59 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; // 1 rem = 10px;
+  box-sizing: border-box;
+  overflow: hidden;
+
+  // @include respond(tab-land) {
+  //   font-size: 56.25%;
+  // }
+
+  // @include respond(small-mid) {
+  //   font-size: 50%;
+  // }
+
+  // @include respond(phone) {
+  //   font-size: 43.75%;
+  // }
+
+  // @include respond(small) {
+  //   font-size: 37.5%;
+  // }
+
+  // @include respond(small-x) {
+  //   font-size: 25%;
+  // }
+}
+
+body {
+  background-image: linear-gradient(
+    to right bottom,
+    $color-tertiary-1,
+    $color-tertiary-2,
+    $color-tertiary-3
+  );
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  min-height: 100vh; // FIXME: REMOVE AT FINAL BUILD
+  color: $color-grey-dark-2;
+  // position: relative;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 8rem auto;
+  background-color: $color-grey-light-2;
+  box-shadow: $shadow-dark;
+
+  min-height: 50rem;
+  border-radius: 3px;
+  overflow: hidden;
+}

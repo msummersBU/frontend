@@ -1,0 +1,9 @@
+.make-deck-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(2, min-content);
+  justify-content: space-around;
+  // align-items: center;
+
+  grid-row-gap: 4rem;
+}

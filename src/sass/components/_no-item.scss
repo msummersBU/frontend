@@ -1,0 +1,15 @@
+.no-item {
+  grid-column: 2 / 3;
+  align-self: center;
+
+  & span {
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-transform: uppercase;
+
+    display: inline-block;
+    text-align: center;
+    margin-top: 6rem;
+    color: $color-grey-light-3;
+  }
+}

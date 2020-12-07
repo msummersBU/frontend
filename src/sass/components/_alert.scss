@@ -1,0 +1,31 @@
+.alert {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, 0);
+  padding: 1rem 4rem;
+  padding-bottom: 1.5rem;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  color: $color-grey-light-1;
+  font-size: 2rem;
+  font-weight: 300;
+  width: 30vw;
+  word-break: break-word;
+  text-align: center;
+  z-index: 9999;
+
+  &-type--success {
+    background-color: $color-green-right;
+  }
+
+  &-type--error {
+    background-color: $color-red-wrong;
+  }
+
+  & .cross {
+    text-decoration: none;
+    margin-left: 2rem;
+    color: $color-grey-light-1;
+  }
+}

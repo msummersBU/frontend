@@ -1,0 +1,8 @@
+.make-classroom-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(2, min-content);
+  // justify-items: center;
+  //align-items: center;
+  grid-row-gap: 2.5rem;
+}
