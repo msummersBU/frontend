@@ -1,7 +1,7 @@
 {
-  "name": "studently-frontend",
+  "name": "frontend",
   "version": "1.0.0",
-  "description": "Studently Web App",
+  "description": "Flaschard Web App",
   "main": "index.js",
   "scripts": {
     "watch:sass": "nodemon -e scss -x \"npm run compile:sass\"",
@@ -16,7 +16,7 @@
     "dev:parcel": "parcel src/index.html",
     "build:parcel": "parcel build src/index.html"
   },
-  "author": "Idris",
+  "author": "Michael",
   "license": "ISC",
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
